@@ -3,3 +3,4 @@ google-generativeai
 python-dotenv
 pymupdf
 gunicorn
+Flask-CORS==3.1.1
