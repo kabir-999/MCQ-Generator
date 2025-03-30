@@ -25,10 +25,12 @@ generation_config = {
 model = genai.GenerativeModel(
     model_name="gemini-2.0-flash-exp",
     generation_config=generation_config,
-    system_instruction="Generate structured MCQs from the given content. Format each question as:\n"
+    system_instruction="read the uploaded pdf and generate mcq's....each question's difficulty should be adjusted according to previous question...generate 10 questions adn in the end classify score by saying how many easy,medium and difficult questions user got right
+Format each question as:\n"
     "**Question:** <Question_Text>\n"
     "**Options:**\n(a) <Option_1>\n(b) <Option_2>\n(c) <Option_3>\n(d) <Option_4>\n"
     "**Answer:** <Correct_ans> (Write only the correct option text, no labels like 'a', 'b', etc.)"
+)"
 )
 
 # Function to extract text from a PDF file
